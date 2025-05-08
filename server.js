@@ -2,11 +2,9 @@ const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
 const app = express();
-const port = 8080;
+const port = process.env.PORT;
 
 
-console.log('🔧 Porta ambiente:', process.env.PORT);  // adicione isso
-console.log(`🚀 Servidor rodando na porta ${port}`);
 
 
 app.use(express.json());
